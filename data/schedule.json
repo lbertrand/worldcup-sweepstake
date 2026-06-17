@@ -1,0 +1,1044 @@
+{
+  "matches": [
+    {
+      "matchId": "WC2026-001",
+      "homeTeam": "Mexico",
+      "awayTeam": "South Africa",
+      "group": "A",
+      "round": "GROUP",
+      "venue": "Estadio Banorte",
+      "kickoff": "2026-06-11T19:00Z",
+      "apiFixtureId": "760415"
+    },
+    {
+      "matchId": "WC2026-002",
+      "homeTeam": "South Korea",
+      "awayTeam": "Czechia",
+      "group": "A",
+      "round": "GROUP",
+      "venue": "Estadio Akron",
+      "kickoff": "2026-06-12T02:00Z",
+      "apiFixtureId": "760414"
+    },
+    {
+      "matchId": "WC2026-003",
+      "homeTeam": "Canada",
+      "awayTeam": "Bosnia-Herzegovina",
+      "group": "B",
+      "round": "GROUP",
+      "venue": "BMO Field",
+      "kickoff": "2026-06-12T19:00Z",
+      "apiFixtureId": "760416"
+    },
+    {
+      "matchId": "WC2026-004",
+      "homeTeam": "United States",
+      "awayTeam": "Paraguay",
+      "group": "D",
+      "round": "GROUP",
+      "venue": "SoFi Stadium",
+      "kickoff": "2026-06-13T01:00Z",
+      "apiFixtureId": "760417"
+    },
+    {
+      "matchId": "WC2026-005",
+      "homeTeam": "Qatar",
+      "awayTeam": "Switzerland",
+      "group": "B",
+      "round": "GROUP",
+      "venue": "Levi's Stadium",
+      "kickoff": "2026-06-13T19:00Z",
+      "apiFixtureId": "760420"
+    },
+    {
+      "matchId": "WC2026-006",
+      "homeTeam": "Brazil",
+      "awayTeam": "Morocco",
+      "group": "C",
+      "round": "GROUP",
+      "venue": "MetLife Stadium",
+      "kickoff": "2026-06-13T22:00Z",
+      "apiFixtureId": "760419"
+    },
+    {
+      "matchId": "WC2026-007",
+      "homeTeam": "Haiti",
+      "awayTeam": "Scotland",
+      "group": "C",
+      "round": "GROUP",
+      "venue": "Gillette Stadium",
+      "kickoff": "2026-06-14T01:00Z",
+      "apiFixtureId": "760418"
+    },
+    {
+      "matchId": "WC2026-008",
+      "homeTeam": "Australia",
+      "awayTeam": "Türkiye",
+      "group": "D",
+      "round": "GROUP",
+      "venue": "BC Place",
+      "kickoff": "2026-06-14T04:00Z",
+      "apiFixtureId": "760421"
+    },
+    {
+      "matchId": "WC2026-009",
+      "homeTeam": "Germany",
+      "awayTeam": "Curaçao",
+      "group": "E",
+      "round": "GROUP",
+      "venue": "NRG Stadium",
+      "kickoff": "2026-06-14T17:00Z",
+      "apiFixtureId": "760422"
+    },
+    {
+      "matchId": "WC2026-010",
+      "homeTeam": "Netherlands",
+      "awayTeam": "Japan",
+      "group": "F",
+      "round": "GROUP",
+      "venue": "AT&T Stadium",
+      "kickoff": "2026-06-14T20:00Z",
+      "apiFixtureId": "760425"
+    },
+    {
+      "matchId": "WC2026-011",
+      "homeTeam": "Ivory Coast",
+      "awayTeam": "Ecuador",
+      "group": "E",
+      "round": "GROUP",
+      "venue": "Lincoln Financial Field",
+      "kickoff": "2026-06-14T23:00Z",
+      "apiFixtureId": "760423"
+    },
+    {
+      "matchId": "WC2026-012",
+      "homeTeam": "Sweden",
+      "awayTeam": "Tunisia",
+      "group": "F",
+      "round": "GROUP",
+      "venue": "Estadio BBVA",
+      "kickoff": "2026-06-15T02:00Z",
+      "apiFixtureId": "760424"
+    },
+    {
+      "matchId": "WC2026-013",
+      "homeTeam": "Spain",
+      "awayTeam": "Cape Verde",
+      "group": "H",
+      "round": "GROUP",
+      "venue": "Mercedes-Benz Stadium",
+      "kickoff": "2026-06-15T16:00Z",
+      "apiFixtureId": "760428"
+    },
+    {
+      "matchId": "WC2026-014",
+      "homeTeam": "Belgium",
+      "awayTeam": "Egypt",
+      "group": "G",
+      "round": "GROUP",
+      "venue": "Lumen Field",
+      "kickoff": "2026-06-15T19:00Z",
+      "apiFixtureId": "760426"
+    },
+    {
+      "matchId": "WC2026-015",
+      "homeTeam": "Saudi Arabia",
+      "awayTeam": "Uruguay",
+      "group": "H",
+      "round": "GROUP",
+      "venue": "Hard Rock Stadium",
+      "kickoff": "2026-06-15T22:00Z",
+      "apiFixtureId": "760429"
+    },
+    {
+      "matchId": "WC2026-016",
+      "homeTeam": "Iran",
+      "awayTeam": "New Zealand",
+      "group": "G",
+      "round": "GROUP",
+      "venue": "SoFi Stadium",
+      "kickoff": "2026-06-16T01:00Z",
+      "apiFixtureId": "760427"
+    },
+    {
+      "matchId": "WC2026-017",
+      "homeTeam": "France",
+      "awayTeam": "Senegal",
+      "group": "I",
+      "round": "GROUP",
+      "venue": "MetLife Stadium",
+      "kickoff": "2026-06-16T19:00Z",
+      "apiFixtureId": "760432"
+    },
+    {
+      "matchId": "WC2026-018",
+      "homeTeam": "Iraq",
+      "awayTeam": "Norway",
+      "group": "I",
+      "round": "GROUP",
+      "venue": "Gillette Stadium",
+      "kickoff": "2026-06-16T22:00Z",
+      "apiFixtureId": "760430"
+    },
+    {
+      "matchId": "WC2026-019",
+      "homeTeam": "Argentina",
+      "awayTeam": "Algeria",
+      "group": "J",
+      "round": "GROUP",
+      "venue": "GEHA Field at Arrowhead Stadium",
+      "kickoff": "2026-06-17T01:00Z",
+      "apiFixtureId": "760433"
+    },
+    {
+      "matchId": "WC2026-020",
+      "homeTeam": "Austria",
+      "awayTeam": "Jordan",
+      "group": "J",
+      "round": "GROUP",
+      "venue": "Levi's Stadium",
+      "kickoff": "2026-06-17T04:00Z",
+      "apiFixtureId": "760431"
+    },
+    {
+      "matchId": "WC2026-021",
+      "homeTeam": "Portugal",
+      "awayTeam": "Congo DR",
+      "group": "K",
+      "round": "GROUP",
+      "venue": "NRG Stadium",
+      "kickoff": "2026-06-17T17:00Z",
+      "apiFixtureId": "760435"
+    },
+    {
+      "matchId": "WC2026-022",
+      "homeTeam": "England",
+      "awayTeam": "Croatia",
+      "group": "L",
+      "round": "GROUP",
+      "venue": "AT&T Stadium",
+      "kickoff": "2026-06-17T20:00Z",
+      "apiFixtureId": "760437"
+    },
+    {
+      "matchId": "WC2026-023",
+      "homeTeam": "Ghana",
+      "awayTeam": "Panama",
+      "group": "L",
+      "round": "GROUP",
+      "venue": "BMO Field",
+      "kickoff": "2026-06-17T23:00Z",
+      "apiFixtureId": "760434"
+    },
+    {
+      "matchId": "WC2026-024",
+      "homeTeam": "Uzbekistan",
+      "awayTeam": "Colombia",
+      "group": "K",
+      "round": "GROUP",
+      "venue": "Estadio Banorte",
+      "kickoff": "2026-06-18T02:00Z",
+      "apiFixtureId": "760436"
+    },
+    {
+      "matchId": "WC2026-025",
+      "homeTeam": "Czechia",
+      "awayTeam": "South Africa",
+      "group": "A",
+      "round": "GROUP",
+      "venue": "Mercedes-Benz Stadium",
+      "kickoff": "2026-06-18T16:00Z",
+      "apiFixtureId": "760438"
+    },
+    {
+      "matchId": "WC2026-026",
+      "homeTeam": "Switzerland",
+      "awayTeam": "Bosnia-Herzegovina",
+      "group": "B",
+      "round": "GROUP",
+      "venue": "SoFi Stadium",
+      "kickoff": "2026-06-18T19:00Z",
+      "apiFixtureId": "760439"
+    },
+    {
+      "matchId": "WC2026-027",
+      "homeTeam": "Canada",
+      "awayTeam": "Qatar",
+      "group": "B",
+      "round": "GROUP",
+      "venue": "BC Place",
+      "kickoff": "2026-06-18T22:00Z",
+      "apiFixtureId": "760440"
+    },
+    {
+      "matchId": "WC2026-028",
+      "homeTeam": "Mexico",
+      "awayTeam": "South Korea",
+      "group": "A",
+      "round": "GROUP",
+      "venue": "Estadio Akron",
+      "kickoff": "2026-06-19T01:00Z",
+      "apiFixtureId": "760441"
+    },
+    {
+      "matchId": "WC2026-029",
+      "homeTeam": "United States",
+      "awayTeam": "Australia",
+      "group": "D",
+      "round": "GROUP",
+      "venue": "Lumen Field",
+      "kickoff": "2026-06-19T19:00Z",
+      "apiFixtureId": "760442"
+    },
+    {
+      "matchId": "WC2026-030",
+      "homeTeam": "Scotland",
+      "awayTeam": "Morocco",
+      "group": "C",
+      "round": "GROUP",
+      "venue": "Gillette Stadium",
+      "kickoff": "2026-06-19T22:00Z",
+      "apiFixtureId": "760445"
+    },
+    {
+      "matchId": "WC2026-031",
+      "homeTeam": "Brazil",
+      "awayTeam": "Haiti",
+      "group": "C",
+      "round": "GROUP",
+      "venue": "Lincoln Financial Field",
+      "kickoff": "2026-06-20T00:30Z",
+      "apiFixtureId": "760444"
+    },
+    {
+      "matchId": "WC2026-032",
+      "homeTeam": "Türkiye",
+      "awayTeam": "Paraguay",
+      "group": "D",
+      "round": "GROUP",
+      "venue": "Levi's Stadium",
+      "kickoff": "2026-06-20T03:00Z",
+      "apiFixtureId": "760443"
+    },
+    {
+      "matchId": "WC2026-033",
+      "homeTeam": "Netherlands",
+      "awayTeam": "Sweden",
+      "group": "F",
+      "round": "GROUP",
+      "venue": "NRG Stadium",
+      "kickoff": "2026-06-20T17:00Z",
+      "apiFixtureId": "760447"
+    },
+    {
+      "matchId": "WC2026-034",
+      "homeTeam": "Germany",
+      "awayTeam": "Ivory Coast",
+      "group": "E",
+      "round": "GROUP",
+      "venue": "BMO Field",
+      "kickoff": "2026-06-20T20:00Z",
+      "apiFixtureId": "760448"
+    },
+    {
+      "matchId": "WC2026-035",
+      "homeTeam": "Ecuador",
+      "awayTeam": "Curaçao",
+      "group": "E",
+      "round": "GROUP",
+      "venue": "GEHA Field at Arrowhead Stadium",
+      "kickoff": "2026-06-21T00:00Z",
+      "apiFixtureId": "760446"
+    },
+    {
+      "matchId": "WC2026-036",
+      "homeTeam": "Tunisia",
+      "awayTeam": "Japan",
+      "group": "F",
+      "round": "GROUP",
+      "venue": "Estadio BBVA",
+      "kickoff": "2026-06-21T04:00Z",
+      "apiFixtureId": "760449"
+    },
+    {
+      "matchId": "WC2026-037",
+      "homeTeam": "Spain",
+      "awayTeam": "Saudi Arabia",
+      "group": "H",
+      "round": "GROUP",
+      "venue": "Mercedes-Benz Stadium",
+      "kickoff": "2026-06-21T16:00Z",
+      "apiFixtureId": "760453"
+    },
+    {
+      "matchId": "WC2026-038",
+      "homeTeam": "Belgium",
+      "awayTeam": "Iran",
+      "group": "G",
+      "round": "GROUP",
+      "venue": "SoFi Stadium",
+      "kickoff": "2026-06-21T19:00Z",
+      "apiFixtureId": "760451"
+    },
+    {
+      "matchId": "WC2026-039",
+      "homeTeam": "Uruguay",
+      "awayTeam": "Cape Verde",
+      "group": "H",
+      "round": "GROUP",
+      "venue": "Hard Rock Stadium",
+      "kickoff": "2026-06-21T22:00Z",
+      "apiFixtureId": "760450"
+    },
+    {
+      "matchId": "WC2026-040",
+      "homeTeam": "New Zealand",
+      "awayTeam": "Egypt",
+      "group": "G",
+      "round": "GROUP",
+      "venue": "BC Place",
+      "kickoff": "2026-06-22T01:00Z",
+      "apiFixtureId": "760452"
+    },
+    {
+      "matchId": "WC2026-041",
+      "homeTeam": "Argentina",
+      "awayTeam": "Austria",
+      "group": "J",
+      "round": "GROUP",
+      "venue": "AT&T Stadium",
+      "kickoff": "2026-06-22T17:00Z",
+      "apiFixtureId": "760456"
+    },
+    {
+      "matchId": "WC2026-042",
+      "homeTeam": "France",
+      "awayTeam": "Iraq",
+      "group": "I",
+      "round": "GROUP",
+      "venue": "Lincoln Financial Field",
+      "kickoff": "2026-06-22T21:00Z",
+      "apiFixtureId": "760457"
+    },
+    {
+      "matchId": "WC2026-043",
+      "homeTeam": "Norway",
+      "awayTeam": "Senegal",
+      "group": "I",
+      "round": "GROUP",
+      "venue": "MetLife Stadium",
+      "kickoff": "2026-06-23T00:00Z",
+      "apiFixtureId": "760454"
+    },
+    {
+      "matchId": "WC2026-044",
+      "homeTeam": "Jordan",
+      "awayTeam": "Algeria",
+      "group": "J",
+      "round": "GROUP",
+      "venue": "Levi's Stadium",
+      "kickoff": "2026-06-23T03:00Z",
+      "apiFixtureId": "760455"
+    },
+    {
+      "matchId": "WC2026-045",
+      "homeTeam": "Portugal",
+      "awayTeam": "Uzbekistan",
+      "group": "K",
+      "round": "GROUP",
+      "venue": "NRG Stadium",
+      "kickoff": "2026-06-23T17:00Z",
+      "apiFixtureId": "760461"
+    },
+    {
+      "matchId": "WC2026-046",
+      "homeTeam": "England",
+      "awayTeam": "Ghana",
+      "group": "L",
+      "round": "GROUP",
+      "venue": "Gillette Stadium",
+      "kickoff": "2026-06-23T20:00Z",
+      "apiFixtureId": "760458"
+    },
+    {
+      "matchId": "WC2026-047",
+      "homeTeam": "Panama",
+      "awayTeam": "Croatia",
+      "group": "L",
+      "round": "GROUP",
+      "venue": "BMO Field",
+      "kickoff": "2026-06-23T23:00Z",
+      "apiFixtureId": "760460"
+    },
+    {
+      "matchId": "WC2026-048",
+      "homeTeam": "Colombia",
+      "awayTeam": "Congo DR",
+      "group": "K",
+      "round": "GROUP",
+      "venue": "Estadio Akron",
+      "kickoff": "2026-06-24T02:00Z",
+      "apiFixtureId": "760459"
+    },
+    {
+      "matchId": "WC2026-049",
+      "homeTeam": "Bosnia-Herzegovina",
+      "awayTeam": "Qatar",
+      "group": "B",
+      "round": "GROUP",
+      "venue": "Lumen Field",
+      "kickoff": "2026-06-24T19:00Z",
+      "apiFixtureId": "760462"
+    },
+    {
+      "matchId": "WC2026-050",
+      "homeTeam": "Switzerland",
+      "awayTeam": "Canada",
+      "group": "B",
+      "round": "GROUP",
+      "venue": "BC Place",
+      "kickoff": "2026-06-24T19:00Z",
+      "apiFixtureId": "760463"
+    },
+    {
+      "matchId": "WC2026-051",
+      "homeTeam": "Morocco",
+      "awayTeam": "Haiti",
+      "group": "C",
+      "round": "GROUP",
+      "venue": "Mercedes-Benz Stadium",
+      "kickoff": "2026-06-24T22:00Z",
+      "apiFixtureId": "760464"
+    },
+    {
+      "matchId": "WC2026-052",
+      "homeTeam": "Scotland",
+      "awayTeam": "Brazil",
+      "group": "C",
+      "round": "GROUP",
+      "venue": "Hard Rock Stadium",
+      "kickoff": "2026-06-24T22:00Z",
+      "apiFixtureId": "760465"
+    },
+    {
+      "matchId": "WC2026-053",
+      "homeTeam": "Czechia",
+      "awayTeam": "Mexico",
+      "group": "A",
+      "round": "GROUP",
+      "venue": "Estadio Banorte",
+      "kickoff": "2026-06-25T01:00Z",
+      "apiFixtureId": "760467"
+    },
+    {
+      "matchId": "WC2026-054",
+      "homeTeam": "South Africa",
+      "awayTeam": "South Korea",
+      "group": "A",
+      "round": "GROUP",
+      "venue": "Estadio BBVA",
+      "kickoff": "2026-06-25T01:00Z",
+      "apiFixtureId": "760466"
+    },
+    {
+      "matchId": "WC2026-055",
+      "homeTeam": "Curaçao",
+      "awayTeam": "Ivory Coast",
+      "group": "E",
+      "round": "GROUP",
+      "venue": "Lincoln Financial Field",
+      "kickoff": "2026-06-25T20:00Z",
+      "apiFixtureId": "760473"
+    },
+    {
+      "matchId": "WC2026-056",
+      "homeTeam": "Ecuador",
+      "awayTeam": "Germany",
+      "group": "E",
+      "round": "GROUP",
+      "venue": "MetLife Stadium",
+      "kickoff": "2026-06-25T20:00Z",
+      "apiFixtureId": "760468"
+    },
+    {
+      "matchId": "WC2026-057",
+      "homeTeam": "Japan",
+      "awayTeam": "Sweden",
+      "group": "F",
+      "round": "GROUP",
+      "venue": "AT&T Stadium",
+      "kickoff": "2026-06-25T23:00Z",
+      "apiFixtureId": "760471"
+    },
+    {
+      "matchId": "WC2026-058",
+      "homeTeam": "Tunisia",
+      "awayTeam": "Netherlands",
+      "group": "F",
+      "round": "GROUP",
+      "venue": "GEHA Field at Arrowhead Stadium",
+      "kickoff": "2026-06-25T23:00Z",
+      "apiFixtureId": "760472"
+    },
+    {
+      "matchId": "WC2026-059",
+      "homeTeam": "Paraguay",
+      "awayTeam": "Australia",
+      "group": "D",
+      "round": "GROUP",
+      "venue": "Levi's Stadium",
+      "kickoff": "2026-06-26T02:00Z",
+      "apiFixtureId": "760469"
+    },
+    {
+      "matchId": "WC2026-060",
+      "homeTeam": "Türkiye",
+      "awayTeam": "United States",
+      "group": "D",
+      "round": "GROUP",
+      "venue": "SoFi Stadium",
+      "kickoff": "2026-06-26T02:00Z",
+      "apiFixtureId": "760470"
+    },
+    {
+      "matchId": "WC2026-061",
+      "homeTeam": "Norway",
+      "awayTeam": "France",
+      "group": "I",
+      "round": "GROUP",
+      "venue": "Gillette Stadium",
+      "kickoff": "2026-06-26T19:00Z",
+      "apiFixtureId": "760475"
+    },
+    {
+      "matchId": "WC2026-062",
+      "homeTeam": "Senegal",
+      "awayTeam": "Iraq",
+      "group": "I",
+      "round": "GROUP",
+      "venue": "BMO Field",
+      "kickoff": "2026-06-26T19:00Z",
+      "apiFixtureId": "760474"
+    },
+    {
+      "matchId": "WC2026-063",
+      "homeTeam": "Cape Verde",
+      "awayTeam": "Saudi Arabia",
+      "group": "H",
+      "round": "GROUP",
+      "venue": "NRG Stadium",
+      "kickoff": "2026-06-27T00:00Z",
+      "apiFixtureId": "760478"
+    },
+    {
+      "matchId": "WC2026-064",
+      "homeTeam": "Uruguay",
+      "awayTeam": "Spain",
+      "group": "H",
+      "round": "GROUP",
+      "venue": "Estadio Akron",
+      "kickoff": "2026-06-27T00:00Z",
+      "apiFixtureId": "760479"
+    },
+    {
+      "matchId": "WC2026-065",
+      "homeTeam": "Egypt",
+      "awayTeam": "Iran",
+      "group": "G",
+      "round": "GROUP",
+      "venue": "Lumen Field",
+      "kickoff": "2026-06-27T03:00Z",
+      "apiFixtureId": "760476"
+    },
+    {
+      "matchId": "WC2026-066",
+      "homeTeam": "New Zealand",
+      "awayTeam": "Belgium",
+      "group": "G",
+      "round": "GROUP",
+      "venue": "BC Place",
+      "kickoff": "2026-06-27T03:00Z",
+      "apiFixtureId": "760477"
+    },
+    {
+      "matchId": "WC2026-067",
+      "homeTeam": "Croatia",
+      "awayTeam": "Ghana",
+      "group": "L",
+      "round": "GROUP",
+      "venue": "Lincoln Financial Field",
+      "kickoff": "2026-06-27T21:00Z",
+      "apiFixtureId": "760480"
+    },
+    {
+      "matchId": "WC2026-068",
+      "homeTeam": "Panama",
+      "awayTeam": "England",
+      "group": "L",
+      "round": "GROUP",
+      "venue": "MetLife Stadium",
+      "kickoff": "2026-06-27T21:00Z",
+      "apiFixtureId": "760485"
+    },
+    {
+      "matchId": "WC2026-069",
+      "homeTeam": "Colombia",
+      "awayTeam": "Portugal",
+      "group": "K",
+      "round": "GROUP",
+      "venue": "Hard Rock Stadium",
+      "kickoff": "2026-06-27T23:30Z",
+      "apiFixtureId": "760481"
+    },
+    {
+      "matchId": "WC2026-070",
+      "homeTeam": "Congo DR",
+      "awayTeam": "Uzbekistan",
+      "group": "K",
+      "round": "GROUP",
+      "venue": "Mercedes-Benz Stadium",
+      "kickoff": "2026-06-27T23:30Z",
+      "apiFixtureId": "760482"
+    },
+    {
+      "matchId": "WC2026-071",
+      "homeTeam": "Algeria",
+      "awayTeam": "Austria",
+      "group": "J",
+      "round": "GROUP",
+      "venue": "GEHA Field at Arrowhead Stadium",
+      "kickoff": "2026-06-28T02:00Z",
+      "apiFixtureId": "760484"
+    },
+    {
+      "matchId": "WC2026-072",
+      "homeTeam": "Jordan",
+      "awayTeam": "Argentina",
+      "group": "J",
+      "round": "GROUP",
+      "venue": "AT&T Stadium",
+      "kickoff": "2026-06-28T02:00Z",
+      "apiFixtureId": "760483"
+    },
+    {
+      "matchId": "WC2026-073",
+      "homeTeam": "South Africa",
+      "awayTeam": "Canada",
+      "group": null,
+      "round": "R32",
+      "venue": "SoFi Stadium",
+      "kickoff": "2026-06-28T19:00Z",
+      "apiFixtureId": "760486"
+    },
+    {
+      "matchId": "WC2026-074",
+      "homeTeam": "Brazil",
+      "awayTeam": "Japan",
+      "group": null,
+      "round": "R32",
+      "venue": "NRG Stadium",
+      "kickoff": "2026-06-29T17:00Z",
+      "apiFixtureId": "760487"
+    },
+    {
+      "matchId": "WC2026-075",
+      "homeTeam": "Germany",
+      "awayTeam": "Paraguay",
+      "group": null,
+      "round": "R32",
+      "venue": "Gillette Stadium",
+      "kickoff": "2026-06-29T20:30Z",
+      "apiFixtureId": "760489"
+    },
+    {
+      "matchId": "WC2026-076",
+      "homeTeam": "Netherlands",
+      "awayTeam": "Morocco",
+      "group": null,
+      "round": "R32",
+      "venue": "Estadio BBVA",
+      "kickoff": "2026-06-30T01:00Z",
+      "apiFixtureId": "760488"
+    },
+    {
+      "matchId": "WC2026-077",
+      "homeTeam": "Ivory Coast",
+      "awayTeam": "Norway",
+      "group": null,
+      "round": "R32",
+      "venue": "AT&T Stadium",
+      "kickoff": "2026-06-30T17:00Z",
+      "apiFixtureId": "760490"
+    },
+    {
+      "matchId": "WC2026-078",
+      "homeTeam": "France",
+      "awayTeam": "Sweden",
+      "group": null,
+      "round": "R32",
+      "venue": "MetLife Stadium",
+      "kickoff": "2026-06-30T21:00Z",
+      "apiFixtureId": "760492"
+    },
+    {
+      "matchId": "WC2026-079",
+      "homeTeam": "Mexico",
+      "awayTeam": "Ecuador",
+      "group": null,
+      "round": "R32",
+      "venue": "Estadio Banorte",
+      "kickoff": "2026-07-01T01:00Z",
+      "apiFixtureId": "760491"
+    },
+    {
+      "matchId": "WC2026-080",
+      "homeTeam": "England",
+      "awayTeam": "Congo DR",
+      "group": null,
+      "round": "R32",
+      "venue": "Mercedes-Benz Stadium",
+      "kickoff": "2026-07-01T16:00Z",
+      "apiFixtureId": "760495"
+    },
+    {
+      "matchId": "WC2026-081",
+      "homeTeam": "Belgium",
+      "awayTeam": "Senegal",
+      "group": null,
+      "round": "R32",
+      "venue": "Lumen Field",
+      "kickoff": "2026-07-01T20:00Z",
+      "apiFixtureId": "760493"
+    },
+    {
+      "matchId": "WC2026-082",
+      "homeTeam": "United States",
+      "awayTeam": "Bosnia-Herzegovina",
+      "group": null,
+      "round": "R32",
+      "venue": "Levi's Stadium",
+      "kickoff": "2026-07-02T00:00Z",
+      "apiFixtureId": "760494"
+    },
+    {
+      "matchId": "WC2026-083",
+      "homeTeam": "Spain",
+      "awayTeam": "Austria",
+      "group": null,
+      "round": "R32",
+      "venue": "SoFi Stadium",
+      "kickoff": "2026-07-02T19:00Z",
+      "apiFixtureId": "760497"
+    },
+    {
+      "matchId": "WC2026-084",
+      "homeTeam": "Portugal",
+      "awayTeam": "Croatia",
+      "group": null,
+      "round": "R32",
+      "venue": "BMO Field",
+      "kickoff": "2026-07-02T23:00Z",
+      "apiFixtureId": "760496"
+    },
+    {
+      "matchId": "WC2026-085",
+      "homeTeam": "Switzerland",
+      "awayTeam": "Algeria",
+      "group": null,
+      "round": "R32",
+      "venue": "BC Place",
+      "kickoff": "2026-07-03T03:00Z",
+      "apiFixtureId": "760498"
+    },
+    {
+      "matchId": "WC2026-086",
+      "homeTeam": "Australia",
+      "awayTeam": "Egypt",
+      "group": null,
+      "round": "R32",
+      "venue": "AT&T Stadium",
+      "kickoff": "2026-07-03T18:00Z",
+      "apiFixtureId": "760499"
+    },
+    {
+      "matchId": "WC2026-087",
+      "homeTeam": "Argentina",
+      "awayTeam": "Cape Verde",
+      "group": null,
+      "round": "R32",
+      "venue": "Hard Rock Stadium",
+      "kickoff": "2026-07-03T22:00Z",
+      "apiFixtureId": "760500"
+    },
+    {
+      "matchId": "WC2026-088",
+      "homeTeam": "Colombia",
+      "awayTeam": "Ghana",
+      "group": null,
+      "round": "R32",
+      "venue": "GEHA Field at Arrowhead Stadium",
+      "kickoff": "2026-07-04T01:30Z",
+      "apiFixtureId": "760501"
+    },
+    {
+      "matchId": "WC2026-089",
+      "homeTeam": "Round of 32 1 Winner",
+      "awayTeam": "Round of 32 3 Winner",
+      "group": null,
+      "round": "R16",
+      "venue": "NRG Stadium",
+      "kickoff": "2026-07-04T17:00Z",
+      "apiFixtureId": "760502"
+    },
+    {
+      "matchId": "WC2026-090",
+      "homeTeam": "Round of 32 2 Winner",
+      "awayTeam": "Round of 32 5 Winner",
+      "group": null,
+      "round": "R16",
+      "venue": "Lincoln Financial Field",
+      "kickoff": "2026-07-04T21:00Z",
+      "apiFixtureId": "760503"
+    },
+    {
+      "matchId": "WC2026-091",
+      "homeTeam": "Round of 32 4 Winner",
+      "awayTeam": "Round of 32 6 Winner",
+      "group": null,
+      "round": "R16",
+      "venue": "MetLife Stadium",
+      "kickoff": "2026-07-05T20:00Z",
+      "apiFixtureId": "760504"
+    },
+    {
+      "matchId": "WC2026-092",
+      "homeTeam": "Round of 32 7 Winner",
+      "awayTeam": "Round of 32 8 Winner",
+      "group": null,
+      "round": "R16",
+      "venue": "Estadio Banorte",
+      "kickoff": "2026-07-06T00:00Z",
+      "apiFixtureId": "760505"
+    },
+    {
+      "matchId": "WC2026-093",
+      "homeTeam": "Round of 32 11 Winner",
+      "awayTeam": "Round of 32 12 Winner",
+      "group": null,
+      "round": "R16",
+      "venue": "AT&T Stadium",
+      "kickoff": "2026-07-06T19:00Z",
+      "apiFixtureId": "760506"
+    },
+    {
+      "matchId": "WC2026-094",
+      "homeTeam": "Round of 32 9 Winner",
+      "awayTeam": "Round of 32 10 Winner",
+      "group": null,
+      "round": "R16",
+      "venue": "Lumen Field",
+      "kickoff": "2026-07-07T00:00Z",
+      "apiFixtureId": "760507"
+    },
+    {
+      "matchId": "WC2026-095",
+      "homeTeam": "Round of 32 14 Winner",
+      "awayTeam": "Round of 32 16 Winner",
+      "group": null,
+      "round": "R16",
+      "venue": "Mercedes-Benz Stadium",
+      "kickoff": "2026-07-07T16:00Z",
+      "apiFixtureId": "760509"
+    },
+    {
+      "matchId": "WC2026-096",
+      "homeTeam": "Round of 32 13 Winner",
+      "awayTeam": "Round of 32 15 Winner",
+      "group": null,
+      "round": "R16",
+      "venue": "BC Place",
+      "kickoff": "2026-07-07T20:00Z",
+      "apiFixtureId": "760508"
+    },
+    {
+      "matchId": "WC2026-097",
+      "homeTeam": "Round of 16 1 Winner",
+      "awayTeam": "Round of 16 2 Winner",
+      "group": null,
+      "round": "QF",
+      "venue": "Gillette Stadium",
+      "kickoff": "2026-07-09T20:00Z",
+      "apiFixtureId": "760510"
+    },
+    {
+      "matchId": "WC2026-098",
+      "homeTeam": "Round of 16 5 Winner",
+      "awayTeam": "Round of 16 6 Winner",
+      "group": null,
+      "round": "QF",
+      "venue": "SoFi Stadium",
+      "kickoff": "2026-07-10T19:00Z",
+      "apiFixtureId": "760511"
+    },
+    {
+      "matchId": "WC2026-099",
+      "homeTeam": "Round of 16 3 Winner",
+      "awayTeam": "Round of 16 4 Winner",
+      "group": null,
+      "round": "QF",
+      "venue": "Hard Rock Stadium",
+      "kickoff": "2026-07-11T21:00Z",
+      "apiFixtureId": "760512"
+    },
+    {
+      "matchId": "WC2026-100",
+      "homeTeam": "Round of 16 7 Winner",
+      "awayTeam": "Round of 16 8 Winner",
+      "group": null,
+      "round": "QF",
+      "venue": "GEHA Field at Arrowhead Stadium",
+      "kickoff": "2026-07-12T01:00Z",
+      "apiFixtureId": "760513"
+    },
+    {
+      "matchId": "WC2026-101",
+      "homeTeam": "Quarterfinal 1 Winner",
+      "awayTeam": "Quarterfinal 2 Winner",
+      "group": null,
+      "round": "SF",
+      "venue": "AT&T Stadium",
+      "kickoff": "2026-07-14T19:00Z",
+      "apiFixtureId": "760514"
+    },
+    {
+      "matchId": "WC2026-102",
+      "homeTeam": "Quarterfinal 3 Winner",
+      "awayTeam": "Quarterfinal 4 Winner",
+      "group": null,
+      "round": "SF",
+      "venue": "Mercedes-Benz Stadium",
+      "kickoff": "2026-07-15T19:00Z",
+      "apiFixtureId": "760515"
+    },
+    {
+      "matchId": "WC2026-103",
+      "homeTeam": "Semifinal 1 Loser",
+      "awayTeam": "Semifinal 2 Loser",
+      "group": null,
+      "round": "3RD",
+      "venue": "Hard Rock Stadium",
+      "kickoff": "2026-07-18T21:00Z",
+      "apiFixtureId": "760516"
+    },
+    {
+      "matchId": "WC2026-104",
+      "homeTeam": "Semifinal 1 Winner",
+      "awayTeam": "Semifinal 2 Winner",
+      "group": null,
+      "round": "FINAL",
+      "venue": "MetLife Stadium",
+      "kickoff": "2026-07-19T19:00Z",
+      "apiFixtureId": "760517"
+    }
+  ]
+}

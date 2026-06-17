@@ -1,0 +1,952 @@
+/*
+ * style.css — Dark sports-broadcast aesthetic
+ *
+ * Colour palette (CSS custom properties):
+ *   --bg-primary     #0d1117   near-black background
+ *   --bg-card        #161b22   card/panel surface
+ *   --bg-elevated    #21262d   table rows, hover states
+ *   --accent-gold    #f0a500   trophy, rank #1, highlights
+ *   --accent-green   #238636   qualified teams, positive
+ *   --accent-red     #da3633   LIVE indicator
+ *   --accent-blue    #1f6feb   links, upcoming matches
+ *   --text-primary   #e6edf3   main text
+ *   --text-muted     #8b949e   secondary text, labels
+ *   --border         #30363d   subtle dividers
+ *
+ * Layout:
+ *   - Sticky header full-width
+ *   - Two-column top row (Leaderboard ~38%, Match Ticker ~62%)
+ *   - Full-width Tournament Matrix below
+ *   - Responsive: single-column stack on narrow viewports (max-width: 768px)
+ *
+ * Animations:
+ *   @keyframes scoreFlash — brief green highlight on score increase
+ *   @keyframes livePulse  — pulsing red dot for LIVE indicator
+ *   @keyframes spin       — rotation for refresh button hover
+ */
+
+/* =========================================================================
+   Custom properties
+   ========================================================================= */
+
+:root {
+  --bg-primary:   #0d1117;
+  --bg-card:      #161b22;
+  --bg-elevated:  #21262d;
+  --accent-gold:  #f0a500;
+  --accent-green: #238636;
+  --accent-red:   #da3633;
+  --accent-blue:  #1f6feb;
+  --text-primary: #e6edf3;
+  --text-muted:   #8b949e;
+  --border:       #30363d;
+
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+/* =========================================================================
+   Animations
+   ========================================================================= */
+
+@keyframes livePulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+
+@keyframes scoreFlash {
+  0%   { background-color: var(--accent-green); color: #fff; }
+  100% { background-color: transparent; }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+/* =========================================================================
+   Layout — Header
+   ========================================================================= */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+  background-color: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.25rem;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.trophy-emoji {
+  font-size: 1.5rem;
+}
+
+.header-title h1 {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--accent-gold);
+  text-transform: uppercase;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.last-updated {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.refresh-btn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text-primary);
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.2rem 0.5rem;
+  line-height: 1;
+  transition: background-color 0.15s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.refresh-btn:hover {
+  background-color: var(--bg-elevated);
+}
+
+.refresh-btn:hover span,
+.refresh-btn:hover {
+  animation: spin 0.6s linear;
+}
+
+/* =========================================================================
+   Banners — connectivity error, config warnings
+   ========================================================================= */
+
+.connectivity-banner,
+.config-banner {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.6rem 1.25rem;
+  font-size: 0.85rem;
+}
+
+/* Amber/warning tone for connectivity errors */
+.connectivity-banner {
+  background-color: rgba(210, 153, 34, 0.15);
+  border-bottom: 1px solid #d29922;
+  color: #e3b341; /* amber — sufficient contrast on dark bg */
+}
+
+.connectivity-banner.hidden,
+.connectivity-banner[hidden] {
+  display: none;
+}
+
+.connectivity-icon {
+  flex-shrink: 0;
+  font-size: 1rem;
+}
+
+.config-banner {
+  background-color: rgba(31, 111, 235, 0.12);
+  border-bottom: 1px solid var(--accent-blue);
+  color: #79b8ff; /* lightened blue — sufficient contrast on dark bg */
+}
+
+.config-banner.hidden,
+.config-banner[hidden] {
+  display: none;
+}
+
+.config-icon {
+  flex-shrink: 0;
+  font-size: 1rem;
+}
+
+.config-errors {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+}
+
+/* =========================================================================
+   Main layout
+   ========================================================================= */
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 38fr 62fr;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  max-width: 1600px;
+  margin: 0 auto;
+  align-items: start;
+}
+
+@media (max-width: 768px) {
+  .main-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---- Cards / Panels ---- */
+
+.panel {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.panel-matrix {
+  margin: 0 auto 1.25rem;
+  max-width: calc(1600px - 2.5rem);
+  width: calc(100% - 2.5rem);
+}
+
+.section-label {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid var(--border);
+  background-color: var(--bg-elevated);
+}
+
+.loading-placeholder {
+  padding: 1rem;
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+/* =========================================================================
+   Leaderboard
+   ========================================================================= */
+
+.leaderboard-content {
+  overflow-x: auto;
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.leaderboard-table th {
+  padding: 0.5rem 0.75rem;
+  text-align: left;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+}
+
+.leaderboard-table td {
+  padding: 0.55rem 0.75rem;
+  vertical-align: middle;
+  border-bottom: 1px solid var(--border);
+}
+
+.leaderboard-row:last-child td {
+  border-bottom: none;
+}
+
+.leaderboard-row:hover td {
+  background-color: var(--bg-elevated);
+}
+
+/* Rank medal column */
+.col-rank {
+  width: 2.5rem;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Participant name column */
+.col-name {
+  font-weight: 500;
+}
+
+/* Flags column */
+.col-flags {
+  white-space: nowrap;
+}
+
+/* Score column */
+.col-score {
+  width: 3rem;
+  text-align: right;
+  font-weight: 700;
+  font-size: 1rem;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Rank accent: 3px coloured left-border stripe for top-3 rows */
+.rank-gold   { border-left: 3px solid var(--accent-gold); }
+.rank-silver { border-left: 3px solid #8b949e; }
+.rank-bronze { border-left: 3px solid #b45309; }
+
+/* Tied row subtle indent */
+.row-tied .col-name { padding-left: 1.5rem; }
+
+/* Score flash: brief green highlight when value increases */
+.score-flash {
+  animation: scoreFlash 0.8s ease-out;
+}
+
+/* Flags */
+.flag-img {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.flag-emoji {
+  display: inline-block;
+  font-size: 1.1rem;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.flag-wrapper {
+  display: inline-block;
+  margin-right: 3px;
+}
+
+/* =========================================================================
+   Match Ticker
+   ========================================================================= */
+
+.ticker-content {
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 0.25rem 0;
+  /* Custom scrollbar — subtle on dark bg */
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+.ticker-content::-webkit-scrollbar {
+  width: 4px;
+}
+
+.ticker-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.ticker-content::-webkit-scrollbar-thumb {
+  background-color: var(--border);
+  border-radius: 2px;
+}
+
+/* ---- Ticker Navigation ---- */
+
+.ticker-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 1rem;
+  background-color: var(--bg-elevated);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.ticker-nav-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  flex: 1;
+}
+
+.ticker-nav-btn {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text-primary);
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.5rem;
+  transition: background-color 0.15s;
+}
+
+.ticker-nav-today {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  background-color: transparent;
+  border: 1px solid var(--accent-blue);
+  color: var(--accent-blue);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 0.1rem;
+}
+
+.ticker-nav-today:hover {
+  background-color: var(--accent-blue);
+  color: #fff;
+}
+
+.ticker-nav-btn:hover:not(:disabled) {
+  background-color: var(--bg-card);
+}
+
+.ticker-nav-btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.ticker-nav-date {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  min-width: 120px;
+  text-align: center;
+}
+
+/* ---- Individual ticker row ---- */
+
+.ticker-row {
+  display: grid;
+  grid-template-columns: 6.5rem 1fr auto 1fr;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.55rem 0.85rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.85rem;
+  transition: background-color 0.1s;
+}
+
+.ticker-row:last-child {
+  border-bottom: none;
+}
+
+.ticker-row:hover {
+  background-color: var(--bg-elevated);
+}
+
+.ticker-row--live {
+  background-color: rgba(218, 54, 51, 0.06);
+}
+
+.ticker-row--live:hover {
+  background-color: rgba(218, 54, 51, 0.12);
+}
+
+.ticker-row--upcoming {
+  opacity: 0.85;
+}
+
+.ticker-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+}
+
+.ticker-stage {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* ---- Status pills ---- */
+
+.status-pill {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  min-width: 4.5rem;
+  justify-content: center;
+}
+
+/* LIVE: red background/border with pulsing dot */
+.status-live {
+  color: var(--accent-red);
+  background-color: rgba(218, 54, 51, 0.15);
+  border: 1px solid rgba(218, 54, 51, 0.4);
+}
+
+/* FT / AET / PEN: grey/muted */
+.status-finished {
+  color: var(--text-muted);
+  background-color: var(--bg-elevated);
+  border: 1px solid var(--border);
+}
+
+/* Upcoming: blue */
+.status-upcoming {
+  color: var(--accent-blue);
+  background-color: rgba(31, 111, 235, 0.1);
+  border: 1px solid rgba(31, 111, 235, 0.3);
+}
+
+/* Pulsing red dot for LIVE matches */
+.live-dot {
+  display: inline-block;
+  animation: livePulse 1.4s ease-in-out infinite;
+  color: var(--accent-red);
+}
+
+.live-minute {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---- Team cells ---- */
+
+.team-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.team-cell--home {
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+.team-cell--away {
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.team-name {
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.85rem;
+}
+
+/* Larger flag images in ticker (32×24px) */
+.flag-img--ticker {
+  width: 32px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+/* ---- Score ---- */
+
+.match-score {
+  font-weight: 700;
+  font-size: 1rem;
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+  white-space: nowrap;
+  min-width: 3.5rem;
+}
+
+.match-score--upcoming {
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* ---- Participant chip ---- */
+
+.participant-chip {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 0.1rem 0.4rem;
+  border-radius: 10px;
+  background-color: rgba(240, 165, 0, 0.15);
+  color: var(--accent-gold);
+  border: 1px solid rgba(240, 165, 0, 0.35);
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+  cursor: default;
+}
+
+.participant-chip:hover {
+  background-color: rgba(240, 165, 0, 0.25);
+  border-color: rgba(240, 165, 0, 0.6);
+  transform: translateY(-1px);
+}
+
+.participant-chip--matrix {
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+/* ---- Divider between completed and upcoming ---- */
+
+.ticker-divider {
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--accent-blue) 30%,
+    var(--accent-blue) 70%,
+    transparent
+  );
+  opacity: 0.4;
+  margin: 0.1rem 0.85rem;
+}
+
+/* =========================================================================
+   Tournament Progress Matrix
+   ========================================================================= */
+
+/* ---- Main pill tab strip ---- */
+
+.matrix-tabs {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem 0;
+  border-bottom: 1px solid var(--border);
+  background-color: var(--bg-elevated);
+}
+
+.matrix-tab {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  padding: 0.3rem 0.9rem;
+  transition: background-color 0.15s, color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+  margin-bottom: -1px; /* align bottom edge with the border */
+}
+
+.matrix-tab:hover {
+  background-color: var(--bg-card);
+  border-color: var(--text-muted);
+  color: var(--text-primary);
+}
+
+.matrix-tab.active {
+  background-color: var(--accent-blue);
+  border-color: var(--accent-blue);
+  color: #fff;
+}
+
+/* ---- Secondary group sub-tab strip ---- */
+
+.matrix-group-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid var(--border);
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+.matrix-group-tabs::-webkit-scrollbar {
+  height: 3px;
+}
+
+.matrix-group-tabs::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.matrix-group-tabs::-webkit-scrollbar-thumb {
+  background-color: var(--border);
+  border-radius: 2px;
+}
+
+.matrix-group-tab {
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.6rem;
+  transition: background-color 0.1s, color 0.1s, border-color 0.1s;
+  white-space: nowrap;
+}
+
+.matrix-group-tab:hover {
+  background-color: var(--bg-elevated);
+  color: var(--text-primary);
+}
+
+.matrix-group-tab.active {
+  background-color: var(--accent-green);
+  border-color: var(--accent-green);
+  color: #fff;
+}
+
+/* ---- Group standings table ---- */
+
+.standings-table-wrapper {
+  overflow-x: auto;
+  padding: 0.75rem 1rem;
+}
+
+.standings-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.825rem;
+}
+
+.standings-table th {
+  padding: 0.4rem 0.6rem;
+  text-align: center;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+}
+
+.standings-table th.standings-col-team {
+  text-align: left;
+}
+
+.standings-table td {
+  padding: 0.5rem 0.6rem;
+  vertical-align: middle;
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+
+/* Alternating row shading */
+.standings-table tbody tr:nth-child(even) td {
+  background-color: rgba(33, 38, 45, 0.5); /* --bg-elevated at 50% */
+}
+
+.standings-table tr:last-child td {
+  border-bottom: none;
+}
+
+.standings-table tr:hover td {
+  background-color: var(--bg-elevated);
+}
+
+.standings-col-pos {
+  width: 3rem;
+  text-align: center !important;
+  white-space: nowrap;
+}
+
+.standings-col-flag {
+  width: 2rem;
+  text-align: center !important;
+  padding-right: 0.25rem;
+}
+
+.standings-col-team {
+  text-align: left !important;
+  min-width: 8rem;
+}
+
+.standings-col-stat {
+  font-variant-numeric: tabular-nums;
+  width: 2.25rem;
+}
+
+.standings-col-pts {
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+/* Top-2 qualified rows: green left-border + subtle green tint */
+.standings-row--qualified {
+  border-left: 3px solid var(--accent-green);
+  background-color: rgba(35, 134, 54, 0.07);
+}
+
+.standings-row--qualified:hover td {
+  background-color: rgba(35, 134, 54, 0.12);
+}
+
+/* Nth-child alternating won't override qualified row tint — reset it */
+.standings-row--qualified td {
+  background-color: inherit;
+}
+
+/* Teams assigned to a participant: bold name */
+.standings-row--assigned .standings-col-team {
+  font-weight: 600;
+}
+
+.team-name-assigned {
+  font-weight: 700;
+}
+
+/* Qualification checkmark */
+.qualification-mark {
+  display: inline-block;
+  margin-left: 0.25rem;
+  font-size: 0.7rem;
+  color: var(--accent-green);
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+/* ---- Knockout bracket (flexbox layout) ---- */
+
+.bracket-container-tabbed {
+  display: flex;
+  flex-direction: column;
+}
+
+.bracket-round-matches-tabbed {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.bracket-match {
+  background-color: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.bracket-match--unplayed {
+  opacity: 0.65;
+}
+
+.bracket-match-sep {
+  height: 1px;
+  background-color: var(--border);
+}
+
+.bracket-team {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.4rem 0.5rem;
+  font-size: 0.8rem;
+  min-width: 0;
+}
+
+.bracket-team-name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.bracket-team-score {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  min-width: 1.2rem;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+/* Winner: gold border + subtle gold tint */
+.bracket-team--winner {
+  border-left: 3px solid var(--accent-gold);
+  background-color: rgba(240, 165, 0, 0.08);
+}
+
+.bracket-team--winner .bracket-team-name {
+  font-weight: 700;
+  color: var(--accent-gold);
+}
+
+/* TBD slot */
+.bracket-team--tbd {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.matrix-third-header {
+  padding: 0.5rem 1rem;
+  background-color: rgba(31, 111, 235, 0.05);
+  border-bottom: 1px solid var(--border);
+}
+
+.matrix-third-info {
+  font-size: 0.75rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.matrix-third-note {
+  color: var(--text-muted);
+  font-style: italic;
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+
+/* ---- Group tables wrapper ---- */
+
+.group-tables-wrapper {
+  /* Sub-panels individually shown/hidden via [hidden] attribute */
+}
+
+.group-sub-panel {
+  display: block;
+}
+
+.group-sub-panel[hidden] {
+  display: none;
+}

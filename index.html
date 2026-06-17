@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Cup 2026 Sweepstake</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏆</text></svg>">
+</head>
+<body>
+  <!-- Sticky header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-title">
+        <span class="trophy-emoji" aria-hidden="true">🏆</span>
+        <h1>WORLD CUP 2026 SWEEPSTAKE</h1>
+      </div>
+      <div class="header-actions">
+        <span id="last-updated" class="last-updated" aria-live="polite">Last updated —</span>
+        <button id="refresh-btn" class="refresh-btn" title="Refresh now" aria-label="Refresh data">↻</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Connectivity error banner (hidden by default) -->
+  <div id="connectivity-banner" class="connectivity-banner" role="alert" aria-live="assertive" hidden>
+    <span class="connectivity-icon" aria-hidden="true">⚠</span>
+    <span id="connectivity-message">Unable to reach the data source. Showing last known results.</span>
+  </div>
+
+  <!-- Config error banner (hidden by default) -->
+  <div id="config-banner" class="config-banner" role="alert" aria-live="polite" hidden>
+    <span class="config-icon" aria-hidden="true">ℹ</span>
+    <ul id="config-errors" class="config-errors"></ul>
+  </div>
+
+  <!-- Main two-column layout -->
+  <main class="main-layout">
+    <!-- Leaderboard (~38% width) -->
+    <section class="panel panel-leaderboard" aria-labelledby="leaderboard-heading">
+      <h2 id="leaderboard-heading" class="section-label">LEADERBOARD</h2>
+      <div id="leaderboard-content" class="leaderboard-content">
+        <p class="loading-placeholder">Loading…</p>
+      </div>
+    </section>
+
+    <!-- Match Ticker (~62% width) -->
+    <section class="panel panel-ticker" aria-labelledby="ticker-heading">
+      <h2 id="ticker-heading" class="section-label">MATCH TICKER</h2>
+      <div id="ticker-content" class="ticker-content">
+        <p class="loading-placeholder">Loading…</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Tournament Progress Matrix (full width below) -->
+  <section class="panel panel-matrix" aria-labelledby="matrix-heading">
+    <h2 id="matrix-heading" class="section-label">TOURNAMENT PROGRESS</h2>
+    <div id="matrix-content" class="matrix-content">
+      <p class="loading-placeholder">Loading…</p>
+    </div>
+  </section>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

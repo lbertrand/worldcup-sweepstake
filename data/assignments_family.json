@@ -1,0 +1,58 @@
+{
+  "assignments": [
+    { "team": "Bosnia-Herzegovina", "participant": "Louise" },
+    { "team": "Spain",              "participant": "Louise" },
+    { "team": "New Zealand",        "participant": "Louise" },
+    { "team": "Algeria",            "participant": "Louise" },
+    
+    { "team": "Qatar",              "participant": "Eliott" },
+    { "team": "South Africa",       "participant": "Eliott" },
+    { "team": "Haiti",              "participant": "Eliott" },
+    { "team": "Czechia",            "participant": "Eliott" },
+    
+    { "team": "Mexico",             "participant": "Rose" },
+    { "team": "Paraguay",           "participant": "Rose" },
+    { "team": "United States",      "participant": "Rose" },
+    { "team": "Australia",          "participant": "Rose" },
+    
+    { "team": "Brazil",             "participant": "Poppy 🐶" },
+    { "team": "Ecuador",            "participant": "Poppy 🐶" },
+    { "team": "Colombia",           "participant": "Poppy 🐶" },
+    { "team": "France",             "participant": "Poppy 🐶" },
+    
+    { "team": "South Korea",        "participant": "Laurent" },
+    { "team": "Norway",             "participant": "Laurent" },
+    { "team": "Croatia",            "participant": "Laurent" },
+    { "team": "Egypt",              "participant": "Laurent" },
+    
+    { "team": "Panama",             "participant": "Poppa" },
+    { "team": "Morocco",            "participant": "Poppa" },
+    { "team": "Türkiye",            "participant": "Poppa" },
+    { "team": "Germany",            "participant": "Poppa" },
+    
+    { "team": "Senegal",            "participant": "Rory" },
+    { "team": "Congo DR",           "participant": "Rory" },
+    { "team": "Austria",            "participant": "Rory" },
+    { "team": "Argentina",          "participant": "Rory" },
+    
+    { "team": "Tunisia",            "participant": "Monty 🐶" },
+    { "team": "Switzerland",        "participant": "Monty 🐶" },
+    { "team": "Netherlands",        "participant": "Monty 🐶" },
+    { "team": "Ghana",              "participant": "Monty 🐶" },
+    
+    { "team": "Japan",              "participant": "Claire" },
+    { "team": "Sweden",             "participant": "Claire" },
+    { "team": "Portugal",           "participant": "Claire" },
+    { "team": "Belgium",            "participant": "Claire" },
+    
+    { "team": "Uruguay",            "participant": "Richard" },
+    { "team": "Ivory Coast",        "participant": "Richard" },
+    { "team": "England",            "participant": "Richard" },
+    { "team": "Canada",             "participant": "Richard" },
+    
+    { "team": "Saudi Arabia",       "participant": "Thea" },
+    { "team": "Iran",               "participant": "Thea" },
+    { "team": "Iraq",               "participant": "Thea" },
+    { "team": "Scotland",           "participant": "Thea" }
+  ]
+}
